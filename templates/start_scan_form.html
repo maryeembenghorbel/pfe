@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Scan Form</title>
+</head>
+<body>
+    <h1>Start Scan</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="target">Target:</label>
+        <input type="text" id="target" name="target">
+        <button type="submit">Start Scan</button>
+    </form>
+</body>
+</html>
